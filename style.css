@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    padding: 0;
+    background-color: rgb(136, 198, 226);
+    height: 8vh;
+    box-sizing: border-box;
+    box-shadow: 5px 0 5px lightgray;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    height: 06vh;
+}
+nav img{
+    display: flex;
+    padding: 0.5vw 2vw;
+    width: 10vw;
+    height: 5.5vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+    align-items: center;
+    margin: auto;
+}
+.box-container{
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);  
+    position: relative;
+
+}
+.infocontainer{
+    padding: 0 5vw;
+    font-size: 1.5rem;
+}
+#reset{
+    font-size: 1.2rem;
+}
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+.box-container :hover{
+    background-color: rgb(227, 246, 255);
+}
+
+.brr{
+    border-right: none;
+}
+.brl{
+    border-left: none;
+}
+.brt{
+    border-top: none;
+}
+.brb{
+    border-bottom: none;
+}
+.image-box img{
+   width: 0;
+   transition: width 1s ease-in-out;    
+}
+.line{
+    background-color: rgb(136, 198, 226);;
+    width: 0;
+    height: 8px;
+    border-radius: 15px;
+    position: absolute;
+    transition: width 1s ease-in;
+    /* transform: translate(8vw,5vw); */
+}
+@media only screen and (max-width: 950px){
+    nav{
+       height: 7vh;
+    }
+    nav img{
+        width: 10vw;
+        height: 4vh;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .infocontainer{
+        padding: 5vh 0;
+        text-align: center;
+    }
+}
